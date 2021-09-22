@@ -1,0 +1,11 @@
+{
+  "name": "BUSTA",
+  "description": "My name is BUSTA and I am ready to rumble!",
+  "image": "https://ipfs.io/ipfs/QmTtB5A81j4acbGLU4Etnhf11UKWpJzAgZgDJU39Ztet4v?filename=busta.png",
+  "attributes": [
+    {
+      "trait_type": "stuborness",
+      "value": 69
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-from brownie import BattleDonkeyz, config, network
+from brownie import BattleDonkeyz
 from scripts.helpful_scripts import fund_with_link, get_account
 from web3 import Web3
 

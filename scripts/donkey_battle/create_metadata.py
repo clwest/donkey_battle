@@ -32,7 +32,7 @@ def main():
       print(f"Creating Metadata file: {metadata_file_name}")
       donkey_metadata["name"] = name
       donkey_metadata["description"] = f"My name is {name} and I am ready to rumble!"
-      image_path = "./img/donkey_images/" + name.lower().replace("_", "-") + ".png"
+      image_path = "./img/" + name.lower() + ".png"
       
       image_uri = None
       if os.getenv("UPLOAD_IPFS") == "true":
@@ -55,8 +55,9 @@ def upload_to_ipfs(filepath):
     endpoint = "/api/v0/add"
     response = requests.post(ipfs_url + endpoint, files={"file": image_binary})
     ipfs_hash = response.json()["Hash"]
-    filename = filepath.split("/donkey_images/")[-1:][0]
+    filename = filepath.split("/")[-1:][0]
     print(filename)
     image_uri = f"https://ipfs.io/ipfs/{ipfs_hash}?filename={filename}"
     print(image_uri)
     return image_uri
+    return ipfs_hash

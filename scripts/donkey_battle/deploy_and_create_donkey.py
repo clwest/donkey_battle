@@ -15,7 +15,7 @@ def deploy_and_create():
     fund_with_link(donkey_warrior.address)
     creating_tx = donkey_warrior.createDonkey({"from": account})
     creating_tx.wait(1)
-    print("New token has been created")
+    print("New Donkey Warrior has been created")
     return donkey_warrior, creating_tx
 
 
