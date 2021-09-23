@@ -1,1 +1,11 @@
-{"name": "TWEAK", "description": "My name is TWEAK and I am ready to rumble!", "image": "https://ipfs.io/ipfs/QmefsrvJ5h8MZ42FxHq4FebG5x7c3d3XRD5tegreTbbLVx?filename=tweak.png", "attributes": [{"trait_type": "stuborness", "value": 69}]}
+{
+  "name": "TWEAK",
+  "description": "My name is TWEAK and I am ready to rumble!",
+  "image": "https://ipfs.io/ipfs/QmefsrvJ5h8MZ42FxHq4FebG5x7c3d3XRD5tegreTbbLVx?filename=tweak.png",
+  "attributes": [
+    {
+      "trait_type": "stuborness",
+      "value": 69
+    }
+  ]
+}

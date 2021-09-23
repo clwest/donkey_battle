@@ -1,21 +1,21 @@
 from brownie import BattleDonkeyz, network
 from scripts.helpful_scripts import get_name
 from metadata.sample_metadata import metadata_template
+from metadata.donkey_metadata_image import donkey_to_image_uri
 from pathlib import Path
 import json
 import requests
 import os
 
 
-donkey_to_image_uri = {
-  "BUSTA": "https://ipfs.io/ipfs/QmTtB5A81j4acbGLU4Etnhf11UKWpJzAgZgDJU39Ztet4v?filename=busta.png",
-  "REBEL": "https://ipfs.io/ipfs/QmbZjdhuwKcArzV1JTPFh122AscRZvt9RYiqMLU3KowHnz?filename=rebel.png",
-  "JETHRO": "https://ipfs.io/ipfs/QmYXRzfBAXSA8Dh2QvnzprhKvUAqdEyeDTqtb46aBumDXD?filename=jethro.png",
-  "ROSCOE": "https://ipfs.io/ipfs/QmTA1sqLdsVgV91oiST2DogK4PLjfwq1v4dM3esUSvk4BA?filename=roscoe.png",
-  "TWEAK": "https://ipfs.io/ipfs/QmefsrvJ5h8MZ42FxHq4FebG5x7c3d3XRD5tegreTbbLVx?filename=tweak.png",
-  
-}
-
+# donkey_to_image_uri = {
+  # "BUSTA": "https://ipfs.io/ipfs/QmTtB5A81j4acbGLU4Etnhf11UKWpJzAgZgDJU39Ztet4v?filename=busta.png",
+  # "REBEL": "https://ipfs.io/ipfs/QmbZjdhuwKcArzV1JTPFh122AscRZvt9RYiqMLU3KowHnz?filename=rebel.png",
+  # "JETHRO": "https://ipfs.io/ipfs/QmYXRzfBAXSA8Dh2QvnzprhKvUAqdEyeDTqtb46aBumDXD?filename=jethro.png",
+  # "ROSCOE": "https://ipfs.io/ipfs/QmTA1sqLdsVgV91oiST2DogK4PLjfwq1v4dM3esUSvk4BA?filename=roscoe.png",
+  # "TWEAK": "https://ipfs.io/ipfs/QmefsrvJ5h8MZ42FxHq4FebG5x7c3d3XRD5tegreTbbLVx?filename=tweak.png", 
+# }
+# 
 def main():
   donkey_warrior = BattleDonkeyz[-1]
   number_of_donkey_warriors = donkey_warrior.tokenCounter()
